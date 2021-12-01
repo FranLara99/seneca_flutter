@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
+import 'package:seneca_flutter/provider/google_provider_response.dart';
 import 'package:seneca_flutter/provider/provider_response.dart';
 import 'package:seneca_flutter/screens/acceso_correcto.dart';
 import 'package:seneca_flutter/screens/home_screen.dart';
+import "package:firebase_core/firebase_core.dart";
 
-void main() => runApp(AppState());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(AppState());
+} 
 
 class AppState extends StatelessWidget {
   @override
@@ -14,9 +20,14 @@ class AppState extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(
-          create: ( _ ) => ProviderResponse(), lazy: false),
+          create: ( _ ) => ProviderResponse(), 
+          lazy: false
+          ),
+          ChangeNotifierProvider(
+          create: (_) => GoogleProviderResponse(),
+          lazy: false,
+          ),
       ],
-
       child: MyApp(),
     );
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:seneca_flutter/services/google_sign_out.dart';
 
 class AccesoCorrecto extends StatelessWidget {
   @override
@@ -86,8 +87,9 @@ Widget caja() {
             children: [
               Text('Lara Aguilar, Fran', style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold)),
               SizedBox(width: 140 ),
-              Icon(Icons.arrow_drop_down, color: Colors.black,),
-              Icon(Icons.person, color: Colors.black, size: 20,)
+              Text('Log out', style: TextStyle(color: Colors.red, fontSize: 12)),
+              SizedBox(width: 10),
+              GoogleSignOut(),
             ],
           ),
         ),

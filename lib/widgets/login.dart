@@ -125,7 +125,7 @@ final List<Result> listaCredenciales;
       print(listaCredenciales[i].usuario);
       print(listaCredenciales[i].contrasena);
       print(listaCredenciales[i]);
-      if (listaCredenciales[i].usuario == usuario.toString()) {
+      if (listaCredenciales[i].usuario == usuario.toString() && listaCredenciales[i].contrasena == pass.toString()) {
         credencialesCorrectas = true;
       }
     }

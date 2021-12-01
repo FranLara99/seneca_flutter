@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "117383322418",
+    "project_id": "seneca-ff85f",
+    "storage_bucket": "seneca-ff85f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:117383322418:android:a252c16e4c59b1588f952b",
+        "android_client_info": {
+          "package_name": "com.example.seneca_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "117383322418-adbajganbj44psvfferr0db7g67qe72j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.seneca_flutter",
+            "certificate_hash": "16c3ee27c192dfc29e27bde2ba82f52e7fc7c6c1"
+          }
+        },
+        {
+          "client_id": "117383322418-o8k15l79r2b39pomhb7f70dgmub5rj7i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPn1y1vklrYPsfGPPpQYcC1_4QqW6lc_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "117383322418-o8k15l79r2b39pomhb7f70dgmub5rj7i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

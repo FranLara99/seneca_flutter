@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:seneca_flutter/services/google_sign_in.dart';
+import 'package:seneca_flutter/services/google_sign_out.dart';
 import 'package:seneca_flutter/widgets/login.dart';
 import 'package:seneca_flutter/widgets/widget.dart';
 
@@ -30,6 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     SizedBox(height: 15),
                     PasswordOlvidada(),
                     SizedBox(height: 10),
+                    GoogleSignIn(),                    
                     AgregarImagen(),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,

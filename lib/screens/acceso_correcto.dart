@@ -65,7 +65,7 @@ Widget titulo() {
               style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
-                  fontSize: 50),
+                  fontSize: 51),
             )
           ],
         ),
